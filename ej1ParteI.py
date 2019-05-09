@@ -19,16 +19,17 @@ num_adivinador = input('Adivinador:')
 
 while num_adivinador != cifra:
     orden_igual = 0
-    num_iguales = 0
-
+    num_igual = 0
+    print("***ERROR**")
+    
     for i in range(tamanio):
         if num_adivinador[i] == cifra[i]:
             orden_igual = orden_igual + 1
         elif num_adivinador[i] in cifra:
-            num_iguales = num_iguales + 1
+            num_igual = num_igual + 1
     
-    print ('Pensador: respuesta', orden_igual, 'bien,', num_iguales, 'regular')
-    print('Estan en el lugar correcto:', orden_igual, 'Estan en el lugar incorrecto:' , num_iguales)
+    print ('Pensador: respuesta', orden_igual, 'bien,', num_igual, 'regular')
+    print('Estan en el lugar correcto:', orden_igual, 'Estan en el lugar incorrecto:' , num_igual)
     num_adivinador = input("Intenta de nuevo: ")
 
 print ("------------------¡JUEGO TERMINADO!------------------")
