@@ -20,8 +20,7 @@ num_adivinador = input('Adivinador:')
 while num_adivinador != cifra:
     orden_igual = 0
     num_igual = 0
-    print("***ERROR**")
-    
+        
     for i in range(tamanio):
         if num_adivinador[i] == cifra[i]:
             orden_igual = orden_igual + 1
