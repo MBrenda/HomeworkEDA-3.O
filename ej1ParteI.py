@@ -17,6 +17,10 @@ print ('Hola ADIVINADOR tienes que acertar el numero de', tamanio, 'cifras que e
 num_adivinador = input('Adivinador:')
 #print('Adivinador:', num_adivinador) 
 
+while len(num_adivinador) != len(cifra):
+    print("Numero invalido, ingrese otro numero de", tamanio, "cifras")
+    num_adivinador = input(":")
+
 while num_adivinador != cifra:
     orden_igual = 0
     num_igual = 0
