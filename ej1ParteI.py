@@ -11,7 +11,7 @@ for i in range(tamanio):
     while num_ale in cifra:
         num_ale = random.choice(num)
     cifra = cifra + num_ale
-    #print ('cifra=', cifra)
+    print ('cifra=', cifra)
 
 print ('Hola ADIVINADOR tienes que acertar el numero de', tamanio, 'cifras que estoy pensando')
 num_adivinador = input('Adivinador:')
@@ -32,7 +32,7 @@ while num_adivinador != cifra:
             num_igual = num_igual + 1
     
     print ('Pensador: respuesta', orden_igual, 'bien,', num_igual, 'regular')
-    print('Estan en el lugar correcto:', orden_igual, 'Estan en el lugar incorrecto:' , num_igual)
+    print('(Estan en el lugar correcto:', orden_igual, 'Estan en el lugar incorrecto:' , num_igual, ') \n')
     num_adivinador = input("Intenta de nuevo: ")
 
 print ("------------------¡JUEGO TERMINADO!------------------")
