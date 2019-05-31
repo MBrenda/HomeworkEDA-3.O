@@ -7,16 +7,18 @@ num_ale = random.choice(num)
 #print (num_ale)
 cifra='' 
 
+#bucle para armar el numero de 4 cifras
 for i in range(tamanio):
     while num_ale in cifra:
         num_ale = random.choice(num)
     cifra = cifra + num_ale
-    print ('cifra=', cifra)
+    #print ('cifra=', cifra)
 
 print ('Hola ADIVINADOR tienes que acertar el numero de', tamanio, 'cifras que estoy pensando')
 num_adivinador = input('Adivinador:')
 #print('Adivinador:', num_adivinador) 
 
+#verifica el tamaño del numero ingresado
 while len(num_adivinador) != len(cifra):
     print("Numero invalido, ingrese otro numero de", tamanio, "cifras")
     num_adivinador = input(":")
